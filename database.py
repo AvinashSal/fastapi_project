@@ -7,7 +7,7 @@ from urllib.parse import quote_plus
 load_dotenv()
 
 
-DB_url="postgresql://postgres:Angar00@localhost:5432/blogedb"
+DB_url="postgresql://postgres:Password@localhost:5432/blogedb"
 engine=create_engine(DB_url)
 
 sessionlocal=sessionmaker(autoflush=False,bind=engine)
